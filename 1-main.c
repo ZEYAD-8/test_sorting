@@ -45,7 +45,14 @@ int main(void)
     list = create_listint(array, n);
     if (!list)
         return (1);
+    
+    // printf("list is: \n");
     print_list(list);
+    // printf("first before swaping: %d\n", list->n);
+    // node_swap(list, list->next);
+    // node_swap(list, list->next);
+
+    // printf("first after swaping: %d\n", list->n);
     printf("\n");
     insertion_sort_list(&list);
     printf("\n");

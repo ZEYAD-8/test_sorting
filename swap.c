@@ -21,16 +21,47 @@ void swap(int *x, int *y)
  *
  * Return: void
  */
+// void node_swap(listint_t *nx, listint_t *ny)
+// {
+//     if (nx->prev)
+//         nx->prev->next = ny;
+//     if (ny->next)
+//         ny->next->prev = nx;
+
+//     nx->next = ny->next;
+//     ny->prev = nx->prev;
+//     nx->prev = ny;
+//     ny->next = nx;
+
+// }
+
 void node_swap(listint_t *nx, listint_t *ny)
 {
     if (nx->prev)
         nx->prev->next = ny;
-    if(ny->next)
+    if (ny->next)
         ny->next->prev = nx;
 
-    nx->next = ny->next;
-    ny->prev = nx->prev;
-    nx->prev = y;
-    ny->next = x;
-
+    if (ny->next)
+        nx->next = ny->next;
+    if (nx->prev)
+        ny->prev = nx->prev;
+    nx->prev = ny;
+    ny->next = nx;
 }
+
+
+// void node_swap(listint_t *nx, listint_t *ny) {
+//     if (nx->prev)
+//         nx->prev->next = ny;
+//     if (ny->next)
+//         ny->next->prev = nx;
+
+//     listint_t *temp = nx->next;
+//     nx->next = ny->next;
+//     ny->next = temp;
+
+//     temp = nx->prev;
+//     nx->prev = ny->prev;
+//     ny->prev = temp;
+// }
