@@ -38,6 +38,7 @@ listint_t *create_listint(const int *array, size_t size)
  */
 int main(void)
 {
+
     listint_t *list;
     int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
     size_t n = sizeof(array) / sizeof(array[0]);
@@ -45,14 +46,7 @@ int main(void)
     list = create_listint(array, n);
     if (!list)
         return (1);
-    
-    // printf("list is: \n");
-    print_list(list);
-    // printf("first before swaping: %d\n", list->n);
-    // node_swap(list, list->next);
-    // node_swap(list, list->next);
 
-    // printf("first after swaping: %d\n", list->n);
     printf("\n");
     insertion_sort_list(&list);
     printf("\n");
