@@ -2,8 +2,8 @@
 
 /**
  * swap - Swap function
- * @xp: pointer to address of x
- * @yp: pointer to address of y
+ * @x: pointer to address of x
+ * @y: pointer to address of y
  * Return: NULL
 */
 void swap(int *x, int *y)

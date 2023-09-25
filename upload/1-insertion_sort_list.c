@@ -3,7 +3,7 @@
 /**
  * node_swap - Swaps out two nodes
  * @nx: pointer to 1st node.
- * @ns: pointer to 2nd node.
+ * @ny: pointer to 2nd node.
  *
  * Return: void
  */
